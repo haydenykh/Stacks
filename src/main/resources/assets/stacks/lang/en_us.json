@@ -1,0 +1,6 @@
+{
+    "item.stacks.example_item": "Example Item",
+    "block.stacks.example_block": "Example Block",
+
+    "itemgroup.stacks": "Stacks"
+}

@@ -1,5 +1,8 @@
 package com.haydenykh.stacks;
 
+import com.haydenykh.stacks.block.StacksBlocks;
+import com.haydenykh.stacks.item.StacksItems;
+import com.haydenykh.stacks.itemgroup.StacksItemGroups;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,6 +14,9 @@ public class Stacks implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Hello Fabric world!");
+		StacksItems.init();
+		StacksBlocks.init();
+		StacksItemGroups.init();
+		LOGGER.info("Registering Stacks mod!");
 	}
 }
