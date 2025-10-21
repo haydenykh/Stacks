@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "stacks",
+	"version": "${version}",
+	"name": "Stacks",
+	"description": "A mod that add many unique blocks and items to the game. Useful for building and decorations.",
+	"authors": [
+		"HaydenYKH"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/stacks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.haydenykh.stacks.Stacks"
+		],
+		"fabric-datagen": [
+			"com.haydenykh.stacks.StacksDataGenerator"
+		],
+		"client": [
+			"com.haydenykh.stacks.StacksClient"
+		]
+	},
+	"mixins": [
+		"stacks.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.3",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
