@@ -8,8 +8,7 @@
 		"HaydenYKH"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/HaydenYKH/Stacks"
 	},
 	"license": "MIT",
 	"icon": "assets/stacks/icon.png",
