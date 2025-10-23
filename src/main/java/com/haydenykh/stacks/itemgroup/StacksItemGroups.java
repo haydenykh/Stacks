@@ -25,16 +25,6 @@ public class StacksItemGroups {
         Registry.register(Registries.ITEM_GROUP, STACKS_GROUP_KEY, STACKS);
 
         ItemGroupEvents.modifyEntriesEvent(STACKS_GROUP_KEY).register(ig -> {
-            ig.add(StacksItems.EXAMPLE_ITEM);
-
-            ig.add(StacksBlocks.EXAMPLE_BLOCK.asItem());
-
-            ig.add(StacksBlocks.CHARTREUSE_WOOL.asItem());
-            ig.add(StacksBlocks.SPRING_GREEN_WOOL.asItem());
-            ig.add(StacksBlocks.CAPRI_WOOL.asItem());
-            ig.add(StacksBlocks.ULTRAMARINE_WOOL.asItem());
-            ig.add(StacksBlocks.VIOLET_WOOL.asItem());
-            ig.add(StacksBlocks.ROSE_WOOL.asItem());
         });
 
         Stacks.LOGGER.info("Registering Stacks item groups: " + MOD_ID);

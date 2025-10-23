@@ -1,13 +1,3 @@
 {
-    "item.stacks.example_item": "Example Item",
-
-    "block.stacks.example_block": "Example Block",
-    "block.stacks.chartreuse_wool": "Chartreuse Wool",
-    "block.stacks.spring_green_wool": "Spring Green Wool",
-    "block.stacks.capri_wool": "Capri Wool",
-    "block.stacks.ultramarine_wool": "Ultramarine Wool",
-    "block.stacks.violet_wool": "Violet Wool",
-    "block.stacks.rose_wool": "Rose Wool",
-
     "itemgroup.stacks": "Stacks"
 }

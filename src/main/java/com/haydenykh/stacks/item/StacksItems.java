@@ -2,6 +2,7 @@ package com.haydenykh.stacks.item;
 
 import com.haydenykh.stacks.Stacks;
 import net.minecraft.item.Item;
+import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
@@ -14,8 +15,6 @@ import static com.haydenykh.stacks.Stacks.MOD_ID;
 import static net.minecraft.item.Item.Settings;
 
 public class StacksItems {
-
-    public static final Item EXAMPLE_ITEM;
 
     private static Item register(String id, Function<Settings, Item> itemFactory, Settings settings) {
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(MOD_ID, id));
@@ -33,7 +32,6 @@ public class StacksItems {
     }
 
     static {
-        EXAMPLE_ITEM = register("example_item");
     }
 
 }

@@ -2,6 +2,9 @@ package com.haydenykh.stacks.block;
 
 import com.haydenykh.stacks.Stacks;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.MapColor;
+import net.minecraft.block.enums.NoteBlockInstrument;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -17,16 +20,6 @@ import static com.haydenykh.stacks.Stacks.MOD_ID;
 import static net.minecraft.block.AbstractBlock.Settings;
 
 public class StacksBlocks {
-
-    public static final Block EXAMPLE_BLOCK;
-
-    public static final Block CHARTREUSE_WOOL;
-    public static final Block SPRING_GREEN_WOOL;
-    public static final Block CAPRI_WOOL;
-    public static final Block ULTRAMARINE_WOOL;
-    public static final Block VIOLET_WOOL;
-    public static final Block ROSE_WOOL;
-
     private static Block register(String id, Function<Settings, Block> blockFactory, Settings settings, boolean shouldRegisterItem) {
         RegistryKey<Block> key = keyOfBlock(id);
         Block block = blockFactory.apply(settings.registryKey(key));
@@ -55,14 +48,6 @@ public class StacksBlocks {
     }
 
     static {
-        EXAMPLE_BLOCK = register("example_block", Settings.create().sounds(BlockSoundGroup.WOOD));
-
-        CHARTREUSE_WOOL = register("chartreuse_wool", Settings.create().sounds(BlockSoundGroup.WOOL));
-        SPRING_GREEN_WOOL = register("spring_green_wool", Settings.create().sounds(BlockSoundGroup.WOOL));
-        CAPRI_WOOL = register("capri_wool", Settings.create().sounds(BlockSoundGroup.WOOL));
-        ULTRAMARINE_WOOL = register("ultramarine_wool", Settings.create().sounds(BlockSoundGroup.WOOL));
-        VIOLET_WOOL = register("violet_wool", Settings.create().sounds(BlockSoundGroup.WOOL));
-        ROSE_WOOL = register("rose_wool", Settings.create().sounds(BlockSoundGroup.WOOL));
     }
 
 }
